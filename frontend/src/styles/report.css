@@ -1,0 +1,183 @@
+/* Report Issue Page Styles */
+
+.report-issue-page {
+  min-height: 100vh;
+  padding: 40px 0;
+  background-color: #f9fafb;
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.report-header h1 {
+  font-size: 36px;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+}
+
+.report-header p {
+  font-size: 18px;
+  color: var(--text-light);
+}
+
+.report-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.report-form-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.report-form .form-group {
+  margin-bottom: 20px;
+}
+
+.report-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.required {
+  color: var(--danger-color);
+}
+
+.report-form input,
+.report-form textarea,
+.report-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.report-form input:focus,
+.report-form textarea:focus,
+.report-form select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.report-form small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.report-form .btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.map-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.map-section h3 {
+  font-size: 18px;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+}
+
+.map-instructions {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  padding: 12px;
+  background-color: #dbeafe;
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px;
+}
+
+.issue-map {
+  height: 400px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.coordinates-display {
+  background-color: var(--light-color);
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.coordinates-display p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.coordinates-display strong {
+  color: var(--primary-color);
+}
+
+.map-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background-color: var(--light-color);
+  border-radius: 6px;
+  gap: 15px;
+}
+
+.map-loading .spinner {
+  border-width: 3px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .report-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .issue-map {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .report-issue-page {
+    padding: 20px 0;
+  }
+
+  .report-header h1 {
+    font-size: 28px;
+  }
+
+  .report-form-section,
+  .map-section {
+    padding: 20px;
+  }
+
+  .issue-map {
+    height: 250px;
+  }
+}

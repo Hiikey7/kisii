@@ -1,0 +1,48 @@
+{
+  "name": "e-county-system",
+  "version": "1.0.0",
+  "description": "E-County Issue Reporting and Tracking System for Kisii County, Kenya",
+  "private": true,
+  "author": "Kisii County Government",
+  "license": "MIT",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "echo 'Backend is production-ready'",
+    "build": "npm run build:frontend && npm run build:backend",
+    "start": "cd backend && npm start",
+    "test": "echo 'Run tests in frontend or backend directories'",
+    "lint": "echo 'Linting not configured yet'",
+    "clean": "rm -rf frontend/node_modules backend/node_modules"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "e-governance",
+    "issue-tracking",
+    "kisii-county",
+    "kenya",
+    "citizen-engagement",
+    "service-delivery"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kisii-county/e-county-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kisii-county/e-county-system/issues"
+  },
+  "homepage": "https://ecounty-kisii.gov.ke"
+}
