@@ -211,7 +211,7 @@ export const AdminDashboard: React.FC = () => {
   return (
     <div className="admin-dashboard">
       <div className="dashboard-header">
-        <h1>👨‍💼 Admin Control Panel</h1>
+        <h1> Admin Control Panel</h1>
         <p>Welcome, {user?.firstName}! Manage the entire county system.</p>
       </div>
 
@@ -235,37 +235,37 @@ export const AdminDashboard: React.FC = () => {
           className={`tab-btn ${activeTab === 'dashboard' ? 'active' : ''}`}
           onClick={() => setActiveTab('dashboard')}
         >
-          📊 Dashboard
+           Dashboard
         </button>
         <button
           className={`tab-btn ${activeTab === 'issues' ? 'active' : ''}`}
           onClick={() => setActiveTab('issues')}
         >
-          📋 All Issues
+           All Issues
         </button>
         <button
           className={`tab-btn ${activeTab === 'users' ? 'active' : ''}`}
           onClick={() => setActiveTab('users')}
         >
-          👥 User Management
+           User Management
         </button>
         <button
           className={`tab-btn ${activeTab === 'officers' ? 'active' : ''}`}
           onClick={() => setActiveTab('officers')}
         >
-          👮 Field Officers
+           Field Officers
         </button>
         <button
           className={`tab-btn ${activeTab === 'analytics' ? 'active' : ''}`}
           onClick={() => setActiveTab('analytics')}
         >
-          📈 Analytics
+           Analytics
         </button>
         <button
           className={`tab-btn ${activeTab === 'settings' ? 'active' : ''}`}
           onClick={() => setActiveTab('settings')}
         >
-          ⚙️ Settings
+           Settings
         </button>
       </div>
 
@@ -276,21 +276,21 @@ export const AdminDashboard: React.FC = () => {
             {/* Statistics Cards */}
             <div className="stats-grid">
               <div className="stat-card primary">
-                <div className="stat-icon">👥</div>
+                <div className="stat-icon"></div>
                 <div className="stat-info">
                   <div className="stat-number">{stats.totalUsers}</div>
                   <div className="stat-label">Total Users</div>
                 </div>
               </div>
               <div className="stat-card info">
-                <div className="stat-icon">📋</div>
+                <div className="stat-icon"></div>
                 <div className="stat-info">
                   <div className="stat-number">{stats.totalIssues}</div>
                   <div className="stat-label">Total Issues</div>
                 </div>
               </div>
               <div className="stat-card warning">
-                <div className="stat-icon">⏳</div>
+                <div className="stat-icon"></div>
                 <div className="stat-info">
                   <div className="stat-number">{stats.pendingIssues}</div>
                   <div className="stat-label">Pending Issues</div>
@@ -311,25 +311,25 @@ export const AdminDashboard: React.FC = () => {
                 <div className="stat-number" style={{ color: '#4CAF50' }}>
                   {stats.totalCitizens}
                 </div>
-                <div className="stat-label">👤 Citizens</div>
+                <div className="stat-label"> Citizens</div>
               </div>
               <div className="stat-card">
                 <div className="stat-number" style={{ color: '#2196F3' }}>
                   {stats.totalOfficers}
                 </div>
-                <div className="stat-label">🛠️ Field Officers</div>
+                <div className="stat-label"> Field Officers</div>
               </div>
               <div className="stat-card">
                 <div className="stat-number" style={{ color: '#FF9800' }}>
                   {stats.totalAdmins}
                 </div>
-                <div className="stat-label">👨‍💼 Admins</div>
+                <div className="stat-label"> Admins</div>
               </div>
               <div className="stat-card">
                 <div className="stat-number" style={{ color: '#9C27B0' }}>
                   {stats.completionRate}%
                 </div>
-                <div className="stat-label">✅ Completion Rate</div>
+                <div className="stat-label"> Completion Rate</div>
               </div>
             </div>
 
@@ -347,19 +347,19 @@ export const AdminDashboard: React.FC = () => {
                   className="btn btn-secondary"
                   onClick={() => handleExportReport('csv')}
                 >
-                  📥 Export CSV Report
+                   Export CSV Report
                 </button>
                 <button
                   className="btn btn-secondary"
                   onClick={() => handleExportReport('pdf')}
                 >
-                  📄 Export PDF Report
+                   Export PDF Report
                 </button>
                 <button
                   className="btn btn-info"
                   onClick={() => setActiveTab('issues')}
                 >
-                  📋 Manage Issues
+                   Manage Issues
                 </button>
               </div>
             </div>
@@ -521,7 +521,7 @@ export const AdminDashboard: React.FC = () => {
                         className="btn btn-success"
                         onClick={() => handleAssignIssue(selectedIssue._id)}
                       >
-                        📌 Assign Issue
+                         Assign Issue
                       </button>
                     </div>
                   </div>
@@ -827,13 +827,13 @@ export const AdminDashboard: React.FC = () => {
                   className="btn btn-info"
                   onClick={() => handleExportReport('csv')}
                 >
-                  📥 Export CSV
+                   Export CSV
                 </button>
                 <button
                   className="btn btn-info"
                   onClick={() => handleExportReport('pdf')}
                 >
-                  📄 Export PDF
+                   Export PDF
                 </button>
               </div>
             </div>
@@ -844,7 +844,7 @@ export const AdminDashboard: React.FC = () => {
         {activeTab === 'officers' && (
           <div className="officers-management-section">
             <div className="section-header">
-              <h2>👮 Field Officer Management</h2>
+              <h2> Field Officer Management</h2>
               <p>Create field officers and manage their announcement permissions</p>
             </div>
 

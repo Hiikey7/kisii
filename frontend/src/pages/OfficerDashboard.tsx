@@ -224,7 +224,7 @@ export const OfficerDashboard: React.FC = () => {
   return (
     <div className="officer-dashboard">
       <div className="dashboard-header">
-        <h1>🛠️ Officer Dashboard</h1>
+        <h1> Officer Dashboard</h1>
         <p>Welcome, {user?.firstName} {user?.lastName}! Manage your assigned issues and announcements.</p>
       </div>
 
@@ -278,25 +278,25 @@ export const OfficerDashboard: React.FC = () => {
           className={`tab-btn ${activeTab === 'issues' ? 'active' : ''}`}
           onClick={() => setActiveTab('issues')}
         >
-          📋 Issues ({stats.total})
+           Issues ({stats.total})
         </button>
         <button
           className={`tab-btn ${activeTab === 'workload' ? 'active' : ''}`}
           onClick={() => setActiveTab('workload')}
         >
-          📊 Workload
+           Workload
         </button>
         <button
           className={`tab-btn ${activeTab === 'announcements' ? 'active' : ''}`}
           onClick={() => setActiveTab('announcements')}
         >
-          📢 Announcements
+           Announcements
         </button>
         <button
           className={`tab-btn ${activeTab === 'notifications' ? 'active' : ''}`}
           onClick={() => setActiveTab('notifications')}
         >
-          🔔 Notifications {notificationCount > 0 && `(${notificationCount})`}
+           Notifications {notificationCount > 0 && `(${notificationCount})`}
         </button>
       </div>
 
@@ -529,7 +529,7 @@ export const OfficerDashboard: React.FC = () => {
         {/* Workload Tab */}
         {activeTab === 'workload' && (
           <div className="workload-section">
-            <h2>📊 Your Workload Summary</h2>
+            <h2> Your Workload Summary</h2>
             <div className="workload-grid">
               <div className="workload-card">
                 <h3>Pending Tasks</h3>
@@ -573,7 +573,7 @@ export const OfficerDashboard: React.FC = () => {
         {/* Announcements Tab */}
         {activeTab === 'announcements' && (
           <div className="announcements-section">
-            <h2>📢 Manage Your Announcements</h2>
+            <h2> Manage Your Announcements</h2>
             <button
               className="btn btn-primary btn-lg"
               onClick={() => navigate('/officer/announcements/create')}
@@ -592,7 +592,7 @@ export const OfficerDashboard: React.FC = () => {
         {/* Notifications Tab */}
         {activeTab === 'notifications' && (
           <div className="notifications-section">
-            <h2>🔔 Your Notifications</h2>
+            <h2> Your Notifications</h2>
             {notifications.length === 0 ? (
               <div className="no-data">
                 <p>No notifications yet. You're all caught up!</p>
